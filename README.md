@@ -15,7 +15,10 @@ matplotlib (3.8.2)
 numpy (1.26.2)
 scipy (1.11.4)
 ```
-To run the Camera re-localization pipeline, all the packages suggested in  [DSAC*](https://github.com/vislearn/dsacstar) repository should be installed.
+To run the Camera re-localization pipeline, all the packages suggested in  [DSAC*](https://github.com/vislearn/dsacstar) as well as the following packages repository should be installed:
+```
+scipy (1.11.4)
+```
 
 ## Project Structure
 
