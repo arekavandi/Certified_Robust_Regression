@@ -8,7 +8,7 @@ This repository contains a Jupyter Notebook file for figures presented in the pa
 We included all the files/models/datasets required to run the project and there is no need to download external files. 
 
 ## Installation
-Synthetic simulation requires the following python libraries/packages:
+Synthetic simulation requires the following Python libraries/packages:
 ```
 plotly (5.18.0)
 matplotlib (3.8.2)
@@ -22,7 +22,7 @@ To run the Camera Re-localization code, all the packages suggested in  [DSAC*](h
 The repository is organized as follows:
 
 - **`notebooks/`:** Jupyter notebook for evaluating synthetic regression function.
-- **`dsacstar/test_certificate.py`:** Python script for evaluating the robustness of camera-relocalization model.
+- **`dsacstar/test_certificate.py`:** Python script for evaluating the robustness of camera re-localization model.
 - **`dsacstar/datasets/`:** Contains the dataset used for evaluation.
 - **`dsacstar/newmodels/`:** Contains pre-trained models for the Cambridge landmarks dataset.
 
