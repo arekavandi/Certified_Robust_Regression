@@ -15,14 +15,8 @@ matplotlib (3.8.2)
 numpy (1.26.2)
 scipy (1.11.4)
 ```
-To run the Camera Re-localization code, you need, all the packages suggested in  [DSAC*](https://github.com/vislearn/dsacstar) repository as well as the following packages should be installed:
+To run the Camera Re-localization code, all the packages suggested in  [DSAC*](https://github.com/vislearn/dsacstar) repository should be installed.
 
-```
-plotly (5.18.0)
-matplotlib (3.8.2)
-numpy (1.26.2)
-scipy (1.11.4)
-```
 ## Project Structure
 
 The repository is organized as follows:
