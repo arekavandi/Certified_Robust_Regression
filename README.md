@@ -9,6 +9,15 @@ We included all the files/models/datasets required to run the project and there 
 
 ## Installation
 
+## Project Structure
+
+The repository is organized as follows:
+
+- **`notebooks/`:** Jupyter notebooks for evaluating synthetic regression functions.
+- **`dsacstar/`:** Python script for camera-relocalization task.
+- **`dsacstar/datasets/`:** Contains the dataset used for evaluation.
+- **`dsacstar/newmodels/`:** Contains pre-trained models for the Cambridge landmarks dataset.
+
 ## Experimental Results
 
 # Citations
