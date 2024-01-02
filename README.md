@@ -18,6 +18,12 @@ The repository is organized as follows:
 - **`dsacstar/datasets/`:** Contains the dataset used for evaluation.
 - **`dsacstar/newmodels/`:** Contains pre-trained models for the Cambridge landmarks dataset.
 
+For extracting figures of synthetic function, please go to the `notebook\` directory, open the Jupyter Notebook file, and run all the cells.
+
+For running the camera re-localization code, please go to the `dsactstar\` directory and run:
+ ```bash
+python test_certificate.py Cambridge_GreatCourt newmodels\rgb\cambridge\Cambridge_GreatCourt.net --mode 1
+
 ## Experimental Results
 
 # Citations
