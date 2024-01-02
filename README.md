@@ -5,7 +5,7 @@ This Github page is established to present the results of the very first work on
 
 This repository contains a Jupyter Notebook file for figures presented in the paper for a synthetic mapping function.  It also contains a Python script for the certification of camera-relocation task using RGB images using the code provided for [DSAC*](https://github.com/vislearn/dsacstar) repository.
 
-We included all the files/models/datasets required to run the project without downloading external files. 
+We included all the files/models/datasets required to run the project and there is no need to download external files. 
 
 ## Installation
 
