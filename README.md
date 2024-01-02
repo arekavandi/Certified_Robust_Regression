@@ -8,6 +8,13 @@ This repository contains a Jupyter Notebook file for figures presented in the pa
 We included all the files/models/datasets required to run the project and there is no need to download external files. 
 
 ## Installation
+Synthetic simulation requires the following python libraries/packages:
+```
+plotly (5.18.0)
+matplotlib (3.8.2)
+numpy (1.26.2)
+scipy (1.11.4)
+```
 
 ## Project Structure
 
