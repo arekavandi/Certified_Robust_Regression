@@ -14,7 +14,7 @@ We included all the files/models/datasets required to run the project and there 
 The repository is organized as follows:
 
 - **`notebooks/`:** Jupyter notebook for evaluating synthetic regression function.
-- **`dsacstar/test_certificate`:** Python script for evaluating the robustness of camera-relocalization model.
+- **`dsacstar/test_certificate.py`:** Python script for evaluating the robustness of camera-relocalization model.
 - **`dsacstar/datasets/`:** Contains the dataset used for evaluation.
 - **`dsacstar/newmodels/`:** Contains pre-trained models for the Cambridge landmarks dataset.
 
