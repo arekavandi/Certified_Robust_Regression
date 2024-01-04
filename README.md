@@ -34,7 +34,7 @@ For extracting figures of synthetic function, please go to the `notebook/` direc
 
 For running the camera re-localization code, please go to the `dsactstar\` directory in Anaconda Prompt and run:
  ```
-python test_certificate.py Cambridge_GreatCourt newmodels\rgb\cambridge\Cambridge_GreatCourt.net --mode 1
+python test_certificate.py Cambridge_GreatCourt newmodels\rgb\cambridge\Cambridge_GreatCourt.net
 ```
 ## Experimental Results
 
