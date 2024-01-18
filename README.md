@@ -32,7 +32,7 @@ The repository is organized as follows:
 
 For extracting figures of synthetic function, please go to the `notebook/` directory, open `synthetic.ipynb` file, and run all the cells.
 
-For running the camera re-localization code, please go to the `dsactstar\` directory in Anaconda Prompt and run:
+For running the camera re-localization code, please go to the `dsactstar/` directory in Anaconda Prompt and run:
  ```
 python test_certificate.py Cambridge_GreatCourt newmodels\rgb\cambridge\Cambridge_GreatCourt.net
 ```
