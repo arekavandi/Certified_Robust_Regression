@@ -27,8 +27,8 @@ The repository is organized as follows:
 
 - **`notebooks/`:** Jupyter notebook for evaluating synthetic regression function.
 - **`dsacstar/test_certificate.py`:** Python script for evaluating the robustness of camera re-localization model.
-- **`dsacstar/datasets/`:** Contains the dataset used for evaluation. Download it from [here](https://github.com/vislearn/dsacstar).
-- **`dsacstar/newmodels/`:** Contains pre-trained models for the Cambridge landmarks dataset. Download it from [here](https://heidata.uni-heidelberg.de/file.xhtml?persistentId=doi:10.11588/data/N07HKC/CBK0OL).
+- **`dsacstar/datasets/`:** Contains the dataset used for evaluation. Download it [here](https://github.com/vislearn/dsacstar).
+- **`dsacstar/newmodels/`:** Contains pre-trained models for the Cambridge landmarks dataset. Download it [here](https://heidata.uni-heidelberg.de/file.xhtml?persistentId=doi:10.11588/data/N07HKC/CBK0OL).
 
 For extracting figures of synthetic function, please go to the `notebook/` directory, open `synthetic.ipynb` file, and run all the cells.
 
