@@ -1,4 +1,8 @@
 CambridgeLandmarks_GreatCourt
+Use the following link to download the images:
+
+https://drive.google.com/drive/u/1/folders/1gmG9rt5aMVg3q7bw8znn199JmglB9x5I
+
 
 PoseNet: A Convolutional Network for Real-Time 6-DOF Camera Relocalization
 Alex Kendall, Matthew Grimes, Roberto Cipolla
