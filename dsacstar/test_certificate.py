@@ -141,6 +141,9 @@ if __name__ == "__main__" :
             Cer_error=[]
             Cer_error_g=[]
             Cer_error_gd=[]
+            Cer_merror=[]
+            Cer_merror_g=[]
+            Cer_merror_gd=[]
             ex=np.zeros(n_test_image)
             ex_g=np.zeros(n_test_image)
             ex_gd=np.zeros(n_test_image)
@@ -293,15 +296,26 @@ if __name__ == "__main__" :
                 Cer_error.append(tErrs[median_idx])
                 Cer_error_g.append(tgErrs[median_idx])
                 Cer_error_gd.append(tgdErrs[median_idx])
+                Cer_merror.append(sum(tErrs) / len(tErrs))
+                Cer_merror_g.append(sum(tgErrs) / len(tgErrs))
+                Cer_merror_gd.append(sum(tgdErrs) / len(tgdErrs))
             plt.plot(r,Cer_error,label=f"f(x), sigma={sigma[index]}")
             plt.plot(r,Cer_error_g,label=f"g(x), sigma={sigma[index]}")
             plt.plot(r,Cer_error_gd,label=f"Dis. g(x), sigma={sigma[index]}")
 
+        plt.grid(True)
+        plt.xlabel('radius')
+        plt.ylabel('certified median error')
+        plt.legend(loc='upper left') 
+        plt.show(block=False)            
+        #plt.plot(r,Cer_merror,label=f"f(x), sigma={sigma[index]}")
+        #plt.plot(r,Cer_merror_g,label=f"g(x), sigma={sigma[index]}")
+        #plt.plot(r,Cer_merror_gd,label=f"Dis. g(x), sigma={sigma[index]}")
+        #plt.grid(True)
+        #plt.xlabel('radius')
+        #plt.ylabel('certified mean error')
+        #plt.legend(loc='upper left') 
+        #plt.show(block=False)
         print("\n===================================================")
         print("\nTest complete.")
-    
-    plt.grid(True)
-    plt.xlabel('radius')
-    plt.ylabel('certified error')
-    plt.legend(loc='upper left') 
-    plt.show()
+        plt.show()
