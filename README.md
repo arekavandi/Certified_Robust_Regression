@@ -49,7 +49,7 @@ we considered a mapping function $f:\mathbb{R}^2\rightarrow \mathbb{R}$ given by
 For more experiments on a real application (camera pose estimation), download the paper and read the experimental results section as well as Appendix E. 
 
 # Citations
-If you found this page helpful, please cite the following survey papers:
+If you found this GitHub page helpful, please cite the following papers:
 ```
 @article{rekavandi2024rsreg,
   title={RS-Reg: Probabilistic and Robust Certified Regression Against Adversarial Attack Through Randomized Smoothing},
