@@ -44,7 +44,7 @@ We aim to find the upper bound on the input perturbation (w.r.t. a norm) such th
 ## Experimental Results
 we considered a mapping function $f:\mathbb{R}^2\rightarrow \mathbb{R}$ given by $ f(\textbf{x}=[x_1,x_2]^\top)=10\sin(2x_1)+(x_2-2)^2+15$. This function was investigated for the interval $(-1, 5)$ and the following Figure illustrates the derived bounds for the base regression model (blue), smoothed regression model (red), and discounted smoothed model (black and green) in integer points of the defined domain.
 ![image](https://github.com/arekavandi/Certified_Robust_Regression/assets/101369948/2472d3f7-905f-49e0-90db-0da2d864ce1e)
-
+For more experiments on a real application (camera pose estimation), download the paper and read the experimental results section as well as Appendix E. 
 
 # Citations
 If you found this page helpful, please cite the following survey papers:
