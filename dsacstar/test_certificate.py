@@ -1,5 +1,5 @@
 ''' This code was developed by Aref Miri Rekavandi @2024 based on DSAC* repository, for the manuscript entitled 
-"RS-Reg: Probabilistic and Robust Certified Regression Against Adversarial Attack Through Randomized Smoothing".
+"RS-Reg: Probabilistic and Robust Certified Regression Through Randomized Smoothing".
 If you used our code in your research, please cite the aforementioned work.
 '''
 import os
@@ -203,6 +203,7 @@ if __name__ == "__main__" :
                                 opt.inlieralpha,
                                 opt.maxpixelerror,
                                 network.OUTPUT_SUBSAMPLE)
+                            print(f'Estimated Coordinate:{out_pose[0:3,3]}m')
                             if torch.max(torch.abs(ref_pose[0:3, 3] - out_pose[0:3, 3]))<epsilon:
                                 accepted+=1
                             counter+=1
@@ -212,12 +213,14 @@ if __name__ == "__main__" :
                         elif accepted==0:
                             accepted=1
                         probability_lower = brentq(lowerboundestim, 0, 1)
+                        print(f'probability_lowerbound is: {probability_lower} vs observed success: {accepted/n_tr}',)
                         ex[image_ind]=sigma[index]*(norm.ppf(probability_lower, 0, 1)-norm.ppf(P, 0, 1))
                         temp=np.zeros(3)
                         for out_index in range(3):
                             value=out_pose[out_index, 3]
                             temp[out_index]=brentq(difference_between_cdfs, 0, 1)
-                        probability_success = np.min(temp)
+                            
+                        probability_success = np.max(temp)
                         print('probability_success is:',probability_success)
                         ex_g[image_ind]=sigma[index]*(norm.ppf(probability_lower, 0, 1)-norm.ppf(probability_success, 0, 1))
                         
@@ -225,7 +228,7 @@ if __name__ == "__main__" :
                         for out_index in range(3):
                             value=out_pose[out_index, 3]
                             temp[out_index]=brentq(difference_between_cdfs_dis, 0, 1)
-                        probability_dis = np.min(temp)
+                        probability_dis = np.max(temp)
                         print('probability_dis is:',probability_dis)
                         ex_gd[image_ind]=sigma[index]*(norm.ppf(probability_lower, 0, 1)-norm.ppf(probability_dis, 0, 1))
                          
@@ -307,15 +310,16 @@ if __name__ == "__main__" :
         plt.xlabel('radius')
         plt.ylabel('certified median error')
         plt.legend(loc='upper left') 
-        plt.show(block=False)            
-        #plt.plot(r,Cer_merror,label=f"f(x), sigma={sigma[index]}")
-        #plt.plot(r,Cer_merror_g,label=f"g(x), sigma={sigma[index]}")
-        #plt.plot(r,Cer_merror_gd,label=f"Dis. g(x), sigma={sigma[index]}")
-        #plt.grid(True)
-        #plt.xlabel('radius')
-        #plt.ylabel('certified mean error')
-        #plt.legend(loc='upper left') 
-        #plt.show(block=False)
+        print("\nClose the figure to plot certified mean error")
+        plt.show() 
+        plt.plot(r,Cer_merror,label=f"f(x), sigma={sigma[index]}")
+        plt.plot(r,Cer_merror_g,label=f"g(x), sigma={sigma[index]}")
+        plt.plot(r,Cer_merror_gd,label=f"Dis. g(x), sigma={sigma[index]}")
+        plt.grid(True)
+        plt.xlabel('radius')
+        plt.ylabel('certified mean error')
+        plt.legend(loc='upper left') 
+        plt.show(block=False)
         print("\n===================================================")
         print("\nTest complete.")
         plt.show()
