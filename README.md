@@ -39,7 +39,8 @@ python test_certificate.py Cambridge_GreatCourt newmodels\rgb\cambridge\Cambridg
 ## Main Idea
 We aim to find the upper bound on the input perturbation (w.r.t. a norm) such that the output values of a regression model stay  with probability P within the accepted region defined by the user (see the below Figure).
 
-![image](https://github.com/arekavandi/Certified_Robust_Regression/assets/101369948/4e07fc0e-32d7-48b4-8211-64dff03b7848)
+![image](https://github.com/arekavandi/Certified_Robust_Regression/assets/101369948/78d5cfce-5ba4-4343-924c-e2253fcaef20)
+
 
 ## Experimental Results
 we considered a mapping function $f:\mathbb{R}^2\rightarrow \mathbb{R}$ given by $ f(\textbf{x}=[x_1,x_2]^\top)=10\sin(2x_1)+(x_2-2)^2+15$. This function was investigated for the interval $(-1, 5)$ and the following Figure illustrates the derived bounds for the base regression model (blue), smoothed regression model (red), and discounted smoothed model (black and green) in integer points of the defined domain.
