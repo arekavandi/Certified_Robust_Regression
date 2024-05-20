@@ -53,10 +53,11 @@ For more experiments on a real application (camera pose estimation), download th
 # Citations
 If you found this GitHub page helpful, please cite the following papers:
 ```
-@article{rekavandi2024rsreg,
+@article{rekavandi2024rs,
   title={RS-Reg: Probabilistic and Robust Certified Regression Through Randomized Smoothing},
-  author={Rekavandi Miri, Aref, Ohrimenko, Olga, Rubinstein, Benjamin I.P.},
-  journal={arXiv preprint arXiv:???},
+  author={Rekavandi, Aref Miri and Ohrimenko, Olga and Rubinstein, Benjamin IP},
+  journal={arXiv preprint arXiv:2405.08892},
   year={2024}
+}
 }
 ```
