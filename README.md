@@ -59,5 +59,4 @@ If you found this GitHub page helpful, please cite the following papers:
   journal={arXiv preprint arXiv:2405.08892},
   year={2024}
 }
-}
 ```
