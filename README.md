@@ -55,6 +55,7 @@ The repository is organized as follows:
 - **`dsacstar/test_certificate.py`:** Python script for evaluating the robustness of camera re-localization model.
 - **`dsacstar/datasets/`:** Contains the dataset used for evaluation. Download it [here](https://drive.google.com/drive/folders/1gmG9rt5aMVg3q7bw8znn199JmglB9x5I?usp=sharing).
 - **`dsacstar/newmodels/`:** Contains pre-trained models for the Cambridge landmarks dataset. Download it [here](https://heidata.uni-heidelberg.de/file.xhtml?persistentId=doi:10.11588/data/N07HKC/CBK0OL).
+- **`dsacstar/dsacstar/`:** Contains custom C++ extension to run DSAC* visual positioning model.
 
 For extracting figures of synthetic function, please go to the `notebook/` directory, open `synthetic.ipynb` file, and run all the cells.
 
