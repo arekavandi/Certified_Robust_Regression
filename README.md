@@ -20,7 +20,33 @@ To run the Camera re-localization pipeline, all the packages suggested in  [DSAC
 scipy (1.11.4)
 matplotlib (3.8.2)
 ```
+The repository contains an ```environment.yml``` for use with Conda. Perform the following steps:
 
+1. Clone the repository:
+```
+git clone https://github.com/arekavandi/Certified_adv_RRegression.git
+```
+2. Go to the project folder and make a new environment and install the required packages by
+```
+cd Certified_adv_RRegression
+conda env create -f environment.yml
+```
+3. Change the environment
+```
+conda activate ceradv
+```
+4. To be able to work with DSAC*, you have to install a custom C++ extension. To do so, you must run
+```
+cd dsacstar
+cd dsacstar
+python setup.py install
+```
+Check [DSAC*](https://github.com/vislearn/dsacstar) repository if you get an error!
+5. Go back to the directory that your function is by
+```
+cd..
+```
+Now you are ready to perform the certification!
 ## Project Structure
 
 The repository is organized as follows:
