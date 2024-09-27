@@ -24,11 +24,11 @@ The repository contains an ```environment.yml``` for use with Conda. Perform the
 
 1. Clone the repository:
 ```
-git clone https://github.com/arekavandi/Certified_adv_RRegression.git
+git clone https://github.com/arekavandi/Certified_Robust_Regression.git
 ```
 2. Go to the project folder and make a new environment and install the required packages by
 ```
-cd Certified_adv_RRegression
+cd Certified_Robust_Regression
 conda env create -f environment.yml
 ```
 3. Change the environment
