@@ -1,4 +1,4 @@
-name: ceradv
+name: cerroreg
 channels:
   - pytorch
   - anaconda
