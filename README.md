@@ -20,7 +20,7 @@ To run the Camera re-localization pipeline, all the packages suggested in  [DSAC
 scipy (1.7.3)
 matplotlib (3.5.0) 
 ```
-The repository contains an ```environment.yml``` for use with Conda. Perform the following steps:
+The repository contains an `environment.yml` for use with Conda. Perform the following steps:
 
 1. Clone the repository:
 ```
