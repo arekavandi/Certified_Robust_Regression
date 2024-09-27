@@ -1,0 +1,12 @@
+name: ceradv
+channels:
+  - pytorch
+  - anaconda
+dependencies:
+  - pytorch=1.6.0
+  - torchvision=0.7.0
+  - cudatoolkit=10.2
+  - scikit-image=0.16.2
+  - opencv=3.4.2
+  - scipy=1.11.4
+  - matplotlib=3.8.2 
