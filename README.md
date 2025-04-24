@@ -1,7 +1,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2405.08892-b31b1b.svg)](https://arxiv.org/abs/2405.08892)
 
 # RS-Reg: Probabilistic and Robust Certified Regression Through Randomized Smoothing
-
+## (Accepted in Transactions on Machine Learning Research)
 ## Overview
 This GitHub repository was established to present the results of the very first work on the certification of regression models against adversarial attack (L2-Attack) using randomized smoothing. While randomized smoothing has been greatly developed for classification tasks, its potential for regression tasks has not been explored. In this work, we show how the maximum adversarial perturbation of the input data can be derived for the base regression model, and then we show how a similar certificate can be extracted for the averaging function as a basic smoothing. 
 
@@ -81,10 +81,10 @@ For more experiments on a real application (camera pose estimation), download th
 # Citations
 If you found this GitHub page helpful, please cite the following papers:
 ```
-@article{rekavandi2024rs,
+@article{rekavandi2025rs,
   title={RS-Reg: Probabilistic and Robust Certified Regression Through Randomized Smoothing},
   author={Rekavandi, Aref Miri and Ohrimenko, Olga and Rubinstein, Benjamin IP},
-  journal={arXiv preprint arXiv:2405.08892},
-  year={2024}
+  journal={TMLR},
+  year={2025}
 }
 ```
