@@ -1,5 +1,3 @@
-[![arXiv](https://img.shields.io/badge/arXiv-2405.08892-b31b1b.svg)]([https://arxiv.org/abs/2405.08892](https://openreview.net/forum?id=AcLlg4J52H))
-
 [![arXiv](https://img.shields.io/badge/arXiv-2405.08892-b31b1b.svg)](https://arxiv.org/abs/2405.08892)
 
 # RS-Reg: Probabilistic and Robust Certified Regression Through Randomized Smoothing
